@@ -14,3 +14,13 @@ extension Color{
     static let Text = Color("Text")
     static let systemBackground = Color(uiColor: .systemBackground)
 }
+
+extension DateFormatter{
+    static let allNumericUSA: DateFormatter = {
+        print("Initialize Date Formatter")
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/DD/YYYY"
+        
+        return formatter
+    }()
+}
